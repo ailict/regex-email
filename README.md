@@ -38,10 +38,13 @@ This regex uses the `+` quantifier, which indicates that the first part of the s
 
 The domain is specifically quanfied with the curly brackets of `{2,6}`, which further defines that the  preceding character set `[a-z\.]` will be between two to six characters only.
 
-
 ### OR Operator
 
+OR operators are employed through the use of square brackets in the expression that indicate the place of any one character for which we're unsure what we're searching. For our email, this means the first part can be looking for any, at least one, character `a-z0-9_\.-` which is followed by @ and searching for any character `\da-z\.-`, followed by a period, searching for any character `a-z\.` only two to six times.
+
 ### Character Classes
+
+
 
 ### Flags
 
