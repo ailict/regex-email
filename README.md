@@ -30,7 +30,7 @@ Regular expressions (regex or regexp) are a sequence of characters that define a
 ### Anchors
 The anchor `^` searches for any string starting with what follows the anchor, in the case of the email validator regex, that would be any string that begins with `([a-z0-9_\.-]+)`. Our regex also ends with a common anchor `$` which matches any string ending in what precedes that anchor, in this case `([a-z\.]{2,6})`.
 
-The entire expression is surrounded by flags, which we'll get to in a moment, but are indicated by `/(regex)/` and potentially a letter. When evaluating a regex, the anchors will be inside of the flags.
+The entire expression is surrounded by two backslashes, which we'll get to when we discuss flags, but are indicated by `/(regex)/` and potentially a letter outside of the backslash; when evaluating a regex, the anchors will be inside of the backslash characters.
 
 ### Quantifiers
 
@@ -44,9 +44,11 @@ OR operators are employed through the use of square brackets in the expression t
 
 ### Character Classes
 
-
+`\d` is used to match a single character that is a digit 0-9. Used within the OR operator, it is merely providing that one of the characters in the second part of an email between the `@` and `.` could possibly be a single digit.
 
 ### Flags
+
+A regex usually comes within two backslash characters, and at the end we can specify a flag outside of these characters. There are no flags on this email validator regex.
 
 ### Grouping and Capturing
 
