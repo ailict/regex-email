@@ -81,4 +81,4 @@ This regex contains no look aheads or look behinds that evaluate the regex again
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Aili is a full stack software engineering bootcamp student, just trying to make it through the day. You can find her kind of crappy body of work at [github](https://github.com/ailict).
