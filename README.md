@@ -42,6 +42,8 @@ The domain is specifically quanfied with the curly brackets of `{2,6}`, which fu
 
 OR operators are employed through the use of square brackets in the expression that indicate the place of any one character for which we're unsure what we're searching. For our email, this means the first part can be looking for any, at least one, character `a-z0-9_\.-` which is followed by @ and searching for any character `\da-z\.-`, followed by a period, searching for any character `a-z\.` only two to six times.
 
+This is not the only way to indicate OR, but is the only OR operator used within this email expression.
+
 ### Character Classes
 
 `\d` is used to match a single character that is a digit 0-9. Used within the OR operator, it is merely providing that one of the characters in the second part of an email between the `@` and `.` could possibly be a single digit.
@@ -52,15 +54,30 @@ A regex usually comes within two backslash characters, and at the end we can spe
 
 ### Grouping and Capturing
 
+Groups are denoted within parenthesis `()`, in this case, we can see three groups:
+`([a-z0-9_\.-]+)` for the first part of the email, usually personalized
+`([\da-z\.-]+)` for the second part of the email, usually a website or domain name
+`([a-z\.]{2,6})` for the third and last part, looking for a .org or .com type conclusion
+
 ### Bracket Expressions
+
+Bracket expressions indicate OR values, discussed above.
 
 ### Greedy and Lazy Match
 
+From the Medium cheatsheet linked above, "quantifiers ( * + {}) are greedy operators, so they expand the match as far as they can through the provided text". This expression uses both `+` and `{}`, which "greedily" matches by evaluating the expression at every character position in the string, if there's no match, it moves on to the next character and evaluates from that next position. 
+
 ### Boundaries
+
+This regex contains no boundaries of `\b` or `\B` which would perform whole word searches.
 
 ### Back-references
 
+This regex contains no back references to any character groups. 
+
 ### Look-ahead and Look-behind
+
+This regex contains no look aheads or look behinds that evaluate the regex against the ahead or behind character not a part of the regex itself.
 
 ## Author
 
