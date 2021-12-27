@@ -1,8 +1,5 @@
 # Validating an Email with Regex
 
-This tutorial will walk explain the regex functionality to validate an email address using the expression /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
-
-
 ## Summary
 
 Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
