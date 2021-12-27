@@ -1,11 +1,13 @@
 # Validating an Email with Regex
 
-This tutorial will walk explain the regex functionality to validate an email address using the expression /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+This tutorial will walk explain the regex functionality to validate an email address using the expression: 
+
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Regular expressions (regex or regexp) are a sequence of characters that define a search pattern. Regular expressions are extremely useful in extracting information from any text by searching for one or more matches of a specific search pattern, and are commonly used to find or replace characters within a string or validate inputs. This tutortial will walk through the components of a regex using a common regex that validates email addresses.
 
 ## Table of Contents
 
